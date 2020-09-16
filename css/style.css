@@ -188,7 +188,7 @@ li.nav-item {
 /*-- banner --*/
 
 .bg1 {
-    background: url(../images/bg1.jpg)no-repeat center;
+    background: url(../images/bg20.jpg)no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -198,7 +198,7 @@ li.nav-item {
 }
 
 .bg2 {
-    background: url(../images/bg13.jpg)no-repeat center;
+    background: url(../images/bg21.jpg)no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -208,7 +208,7 @@ li.nav-item {
 }
 
 .bg3 {
-    background: url(../images/bg3.jpg)no-repeat center;
+    background: url(../images/bg22.jpg)no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -218,7 +218,7 @@ li.nav-item {
 }
 
 .bg4 {
-    background: url(../images/bg4.jpg)no-repeat center;
+    background: url(../images/bg23.jpg)no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
