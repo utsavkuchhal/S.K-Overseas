@@ -11,6 +11,12 @@
  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <script>
+        
+        myFunction();
+        function myFunction() {
+  document.getElementById("cushions").click(); // Click on the checkbox
+}
+        
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
         }, false);
@@ -47,7 +53,10 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <h1><a class="navbar-brand" href="index.html">
-				<span class="fab fa-osi"></span>  S.K Overseas
+                                                <img src="images/logo1.png" style="width: 80px"/>
+
+				<span></span>  S.K Overseas
+                        
                 </a></h1>
                     <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -64,11 +73,16 @@
                             <li class="nav-item cool">
                                 <a class="nav-link" href="about.html">About</a>
                             </li>
-                            <li class="nav-item cool">
-                                <a class="nav-link" href="services.html">Services</a>
-                            </li>
-                            <li class="nav-item cool active">
-                                <a class="nav-link" href="gallery.html">Gallery</a>
+                        <li class="nav-item dropdown cool">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Gallery
+						</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="rugs.html">Rugs</a>
+                                    <a class="dropdown-item" href="single.html">Single page</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="404.html">404</a>
+                                </div>
                             </li>
                             <li class="nav-item cool">
                                 <a class="nav-link" href="blog.html">Blog</a>
@@ -101,14 +115,14 @@
         <div class="gallery-inner py-md-5 py-4">
             <h2 class="tittle text-center mb-md-5 mb-4">Products Gallery</h2>
             <ul class="portfolio-categ filter pb-5 mb-lg-3 text-center">
-                <li class="port-filter all active ">
+                <li class="port-filter all active" id="all">
                     <a href="#">All</a>
                 </li>
                 <li class="cat-item-1 ">
-                    <a href="#" title="Category 1">RUGS</a>
+                    <a href="#" title="Category 1" id="rugs">RUGS</a>
                 </li>
                 <li class="cat-item-2">
-                    <a href="#" title="Category 2">Cushions</a>
+                    <a href="#" title="Category 2" id="cushions">Cushions</a>
                 </li>
                 <li class="cat-item-3">
                     <a href="#" title="Category 3">Bathmats</a>
@@ -127,18 +141,8 @@
                 </li>
 
             </ul>
-            <ul class="portfolio-area clearfix">
-<!--
-                <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4">
-                    <span class="image-block img-hover">
-                        <a class="image-zoom" href="images/bg1.jpg" data-gal="prettyPhoto[gallery]">
-                            <img src="images/ab.jpg" class="img-gallery " alt="">
-                        </a>
-                    </span>
-                </li>
--->
-               
-                                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+            <ul class="portfolio-area clearfix container" style="height: auto">       
+               <li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
                     <span class="image-block">
                         <a class="image-zoom" href="images/cushions%20(3).jpg" data-gal="prettyPhoto[gallery]">
                             <img src="images/cushions%20(3).jpg" class="img-gallery " alt="">
@@ -371,104 +375,35 @@
     </section>
     <!-- //gallery -->
     <!--/footer-->
-    <footer class="footer-main-w3layouts py-md-5 py-4">
-        <div class="container-fluid px-lg-5 px-3">
+<footer class="footer-main-w3layouts py-md-5 py-4">
+     <div class="container-fluid px-lg-5 px-3">
             <div class="row">
                 <div class="col-lg-5 footer-grid-w3ls">
                     <h3 class="mb-4">About Us</h3>
-                    <p>Traditions that have been part of the Indian ethos for centuries, are carried forward and continued at our factories. At S.K Overseas we create complete floor covering solutions that include carpets, durries, rugs, bath rugs, pillows, poufs, wall hangings, storage baskets and floor cushions. </p>
-                    <div class="row mt-4">
-<!--
-                        <div class="col-md-6">
-                            <h3 class="text-capitalize mb-3">Connect With Social</h3>
-                            <p><span class="fab fa-twitter"></span> twitter/@my_website</p>
-                            <p><span class="fab fa-instagram"></span> instagram/@my_website</p>
-                            <p><span class="fab fa-youtube mb-5"></span> youtube/@my_website</p>
-                            <a href="#" class="facebook-footer mr-2"><span class="fab mr-1 fa-facebook-f"></span> Facebook</a>
-                            <a href="#" class="twitter-footer"><span class="fab mr-1 fa-twitter"></span> Twitter</a>
-                        </div>
--->
-                        <div class="col-md-12">
+                    <p>It is our endeavor to introduce ourselves as one of the leading manufacturers and exporters of 100% home furnishings and textile power loom items.For all home textile item we have our own manufacturing unit with necessary infrastructure and skilled workers. All our home textiles articles are hand-made with emphasis on strict quality control.</p>
+                </div>
+              <div class="col-lg-4 footer-grid-w3ls">
+                       <div class="col-md-12">
                             <h3 class="mb-4">Address</h3>
                             <address class="mb-0">
-							<p class="mb-2"><i class="fas fa-map-marker-alt"></i> 8088H 5th Street Parking, King <br>Block, New York City.</p>
-							<p><i class="fas mr-1 fa-phone"></i> +12 445 8453 8088</p>
-							<p><i class="fas mr-1 fa-fax"></i> +11 997 2040 9436 </p>
-							<p><i class="far mr-1 fa-envelope-open"></i> <a href="mailto:info@example.com">info@example.com</a></p>
+							<p class="mb-2"><i class="fas fa-map-marker-alt"></i> Near RK DYING HOUSE, SHIV PURI ROAD, KRISHAN PURA, <br>Panipat, Haryana 132103 090504 02569</p>
+							<p><i class="fas mr-1 fa-fax"></i> +91 9050402569</p>
+							<p><i class="far mr-1 fa-envelope-open"></i> <a href="mailto:info@example.com">info@skoverseas.in</a></p>
+                            <p><i class="far mr-1 fa-envelope-open"></i> <a href="mailto:info@example.com">sales@skoverseas.in</a></p>
+
 						</address>
                         </div>
-                    </div>
                 </div>
-                <div class="col-lg-4 footer-grid-w3ls">
-                    <h3 class="mb-4">Instagram</h3>
-                    <div class="blog-grids row mb-3">
-                        <div class="col-md-4 blog-grid-left">
-                            <a href="gallery.html">
-							<img src="images/below1.jpg" class="img-fluid" alt="">
-						</a>
-                        </div>
-                        <div class="col-md-8 blog-grid-right">
-                            <h5>
-                                <a href="gallery.html">Imagined, designed and handcrafted with the goal of providing the finest.</a>
-                            </h5>
-                            <div class="sub-meta">
-                                <span>
-								<i class="far fa-clock"></i> 10 June, 2020</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-grids row mb-3">
-                        <div class="col-md-4 blog-grid-left">
-                            <a href="gallery.html">
-							<img src="images/below2.jpg" class="img-fluid" alt="">
-						</a>
-                        </div>
-                        <div class="col-md-8 blog-grid-right">
-                            <h5>
-                                <a href="gallery.html">Woven by some of the finest hands in the country. </a>
-                            </h5>
-                            <div class="sub-meta">
-                                <span>
-								<i class="far fa-clock"></i> 22 June, 2020</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-grids row mb-3">
-                        <div class="col-md-4 blog-grid-left">
-                            <a href="gallery.html">
-							<img src="images/banner3.jpg" class="img-fluid" alt="">
-						</a>
-                        </div>
-                        <div class="col-md-8 blog-grid-right">
-                            <h5>
-                                <a href="gallery.html">Finest fibers to create contemporary, minimalist and traditional designs. </a>
-                            </h5>
-                            <div class="sub-meta">
-                                <span>
-								<i class="far fa-clock"></i> 23 June, 2020</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 footer-grid-w3ls">
+               <div class="col-lg-3 footer-grid-w3ls">
                     <h3 class="mb-4">We Offer</h3>
                     <ul>
-                                                   <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Bathmats</li>
+                        <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Bathmats</li>
                         <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Cushions </li>
                         <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Throws</li>
                         <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Wall Hangings</li>
                         <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Baskets</li>
                         <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Poufs</li>
-
-                        <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Jute Rugs</li>
-                        <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Cotton Rugs</li>
-                        <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Seagrass Rugs</li>
-                        <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Wool Rugs</li>
-                        <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Tencel Rugs</li>
-                        <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Wool-Viscose Rugs</li>
-                        <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Recycled-cotton Rugs</li>
-                        <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Outdoor Rugs</li>
-                        <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Hand Woven Rugs</li>
+                        <li><i class="fas mr-1 fa-long-arrow-alt-right"></i>  Rugs</li>
                     </ul>
                 </div>
             </div>
@@ -479,7 +414,8 @@
     </footer>
     <!-- //footer -->
     <!-- js -->
-    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/jquery-2.2.3.min.js">
+    </script>
     <script src="js/search.js"></script>
     <!-- /dropdown nav -->
     <script>
